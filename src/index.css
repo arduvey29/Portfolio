@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import "tailwindcss";
+
+* {
+  cursor: none;
+}
+
+:root {
+  font-family: 'Manrope', sans-serif;
+}
+
+/* Logo font */
+.logo-font {
+  font-family: 'Audiowide', serif;
+}
+
+.preloader {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  overflow: hidden !important;
+  
+  /* Background layers */
+  background-color: black; /* Base background */
+  background-image: radial-gradient(circle at 50% 10%, rgba(139, 92, 246, 0.3) 10%, rgba(76, 29, 149, 0.2) 40%, transparent 70%);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+
+.preloader .texts-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  width: 280px;
+  font-size: 20px;
+  overflow: hidden;
+  font-weight: 800;
+  opacity: 0;
+  color: white;
+}
+
+/* Responsive styles for phones */
+@media (max-width: 600px) {
+  .preloader .texts-container {
+      font-size: 17px;
+      width: 240px;
+  }
+}
+
+.cursor {
+  background-color: white;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 9999; /* Ensures cursor stays on top of all elements */
+  mix-blend-mode: difference; /* Enhances visibility across different backgrounds */
+  transform: translate(-50%, -50%); /* Centers the cursor correctly */
+  transition: transform 0.15s ease-out, width 0.2s ease-out, height 0.2s ease-out; /* Smooth movement */
+}
