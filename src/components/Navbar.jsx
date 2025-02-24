@@ -88,10 +88,18 @@ const Navbar = () => {
 
       {/* Desktop Icons */}
       <div className="hidden md:flex items-center gap-6 text-xl">
-        <FaLinkedin className="hover:text-purple-400 cursor-pointer transition" />
-        <FaGithub className="hover:text-purple-400 cursor-pointer transition" />
-        <FaInstagram className="hover:text-purple-400 cursor-pointer transition" />
-        <FaDiscord className="hover:text-purple-400 cursor-pointer transition" />
+        <a href="https://www.linkedin.com/in/aaradhy-raghav-duvey-b18b872b7/" target="_blank" rel="noopener noreferrer">
+          <FaLinkedin className="hover:text-purple-400 cursor-pointer transition" />
+        </a>
+        <a href="https://github.com/arduvey29" target="_blank" rel="noopener noreferrer">
+          <FaGithub className="hover:text-purple-400 cursor-pointer transition" />
+        </a>
+        <a href="https://www.instagram.com/ard_16.29?igsh=MTl3cDZtZjIyaXVnOA==" target="_blank" rel="noopener noreferrer">
+          <FaInstagram className="hover:text-purple-400 cursor-pointer transition" />
+        </a>
+        <a href="https://discordapp.com/users/1260661176606523393" target="_blank" rel="noopener noreferrer">
+          <FaDiscord className="hover:text-purple-400 cursor-pointer transition" />
+        </a>
       </div>
 
       {/* Mobile Menu Button */}
